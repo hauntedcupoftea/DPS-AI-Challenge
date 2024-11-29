@@ -12,13 +12,17 @@ def forecast(forecast_input, model):
 
 
 def model_performance():
-    return {"rmse": "", "r2": ""}
+    return {
+        "mae": 7.8796157260626245,
+        "rmse": 9.679660884189174,
+        "r2": 0.5418296585188169,
+    }
 
 
 def model_params():
     return {
-        "growth": "",
-        "changepoint_prior_scale": "",
-        "seasonality_prior_scale": "",
-        "seasonality_mode": "",
+        "growth": "linear",
+        "changepoint_prior_scale": 0.2,
+        "seasonality_prior_scale": 1.0,
+        "seasonality_mode": "multiplicative",
     }
