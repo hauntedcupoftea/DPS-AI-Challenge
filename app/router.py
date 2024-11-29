@@ -6,7 +6,7 @@ from app.functions import *
 from app.models import *
 
 # load model from the json
-with open("../models/prophet-model.json", "r") as fin:
+with open("./models/prophet-model.json", "r") as fin:
     model = model_from_json(fin.read())
 
 
