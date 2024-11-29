@@ -1,1 +1,8 @@
-data/*.csv
+# Ignore all files inside the data/ folder
+data/*
+
+# Allow the data/ folder to remain in the repository
+!data/
+
+# Ensure this works even if the folder is empty by keeping a placeholder file
+!.gitkeep
