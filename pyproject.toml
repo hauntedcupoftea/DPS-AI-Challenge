@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dps-ai-challenge"
-version = "0.1.0"
+version = "0.2.0"
 description = "Application for DPS Artificial Intelligence Engineer Challenge."
 authors = ["hauntedcupoftea <andydchauhan@gmail.com>"]
 license = "MIT"
