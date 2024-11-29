@@ -10,8 +10,8 @@ with open("./models/prophet-model.json", "r") as fin:
     model = model_from_json(fin.read())
 
 
-forecaster = APIRouter(prefix="/forecast", tags=["forecast", "predict"])
-model_stats = APIRouter(prefix="/model", tags=["statistics", "model statistics"])
+forecaster = APIRouter(prefix="/forecast", tags=["forecast"])
+model_stats = APIRouter(prefix="/model", tags=["model statistics"])
 
 
 @forecaster.post("/", response_model=ForecastOutput)

@@ -6,8 +6,7 @@ app = FastAPI()
 app.include_router(forecaster)
 app.include_router(model_stats)
 
-app.get("/")
 
-
+@app.get("/")
 def hello():
     return {"message": "Welcome to the AI-Challenge forecaster"}
