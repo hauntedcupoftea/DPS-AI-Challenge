@@ -11,6 +11,7 @@ package-mode = false
 python = "^3.12"
 prophet = "^1.1.6"
 fastapi = { extras = ["standard"], version = "^0.115.5" }
+pydantic = "^2.10.2"
 
 [tool.poetry.group.dev.dependencies]
 pandas = "^2.2.3"
