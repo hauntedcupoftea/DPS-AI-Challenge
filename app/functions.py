@@ -1,9 +1,11 @@
 import pandas as pd
 
+from app.models import ForecastInput
 
-def forecast(forecast_input, model):
-    year = forecast_input["year"]
-    month = forecast_input["month"]
+
+def forecast(forecast_input: ForecastInput, model):
+    year = forecast_input.year
+    month = forecast_input.month
 
     future = model.make_future_dataframe(periods=1, freq="M")
     future["ds"] = pd.to_datetime(f"{year}-{month}-01")

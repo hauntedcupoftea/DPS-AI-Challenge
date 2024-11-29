@@ -39,7 +39,7 @@ def get_model_performance():
     return model_performance()
 
 
-@model_stats.get("/params", response_model=ModelParams)
+@model_stats.get("/hyper-params", response_model=ModelParams)
 def get_model_params():
     """
     Returns the current parameters used in the Prophet model.
