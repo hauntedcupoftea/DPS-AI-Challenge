@@ -94,6 +94,29 @@ Configuring a project with poetry makes it relatively simple to dockerize and de
 
     ![Figure 8: Model Hyperparameters](/img/hyper-params.png)
 
-## Deployment
+### Deployment
 
-The project can be self hosted should one wish, with a simple poetry command.
+#### Render
+
+The project is curently hosted on [Render](https://render.com), at the URL attached to the top of the repository. It currently runs inside a docker container. Please note that render spins down containers with inactivity, so your first load/request might take some time (~1 minute) to respond. However, subsequent responses will be at full speed for a while.
+
+#### Self-Hosting
+
+The project is bundled with poetry and can be self hosted should one wish, with a simple poetry command.
+After installing poetry itself, if need be, install all dependencies with
+
+```sh
+poetry install
+```
+
+Then host the local server with
+
+```sh
+poetry run start
+```
+
+...And go to [http://localhost:8000](http://localhost:8000) to view and interact with the local API.
+
+### Task 3: Submitting the Challenge
+
+.
