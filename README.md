@@ -62,13 +62,17 @@ Further analysis of the data can result in the following visualizations:
 
     ![Figure 4: A distribution curve of y](/img/y_distribution.png)
 
-From these, we can make a relative simple and effective Prophet model that can be runed with hyperparameter tuning. The code for the specific param_grid can be found [here](/experimentation/model_training.ipynb), which wasn't expanded further due to time limitations. (The output of that cell has been cleared to remove logs that are no longer useful).
+From these, we can make a relative simple and effective Prophet model that can be runed with hyperparameter tuning. For the sake of experimentation, I have also included some other model's results on test data, which performed significantly wrose. The deployed endpoint uses just prophet. The code for the specific param_grid can be found [here](/experimentation/model_training.ipynb), which wasn't expanded further due to time limitations. (The output of that cell has been disabled to remove excessive spam logs).
 
 The prophet model was created with cross-validation on the dataset, with a horizon of 1 year. This means that one param was trained on 20 windows of the dataset. The testing metrics are all derived from data after 2020, in the same dataset. The dataset file has been removed, but the folder is kept in case the dataset is ever updated and this model needs to be trained by anyone else.
 
-The prophet plot of the model looks like this:
+The prophet plot of the model on training data looks like this:
 
-![Figure 5: Prophet plot of the model](/img/prophet_plot.png)
+![Figure 5: Prophet plot of the training data](/img/prophet_train_plot.png)
+
+While on unseen ground truth data, it outperformend all the other models significantly.
+
+![Figure 6: Prophet plot of all the data](/img/prophet_test_plot.png)
 
 ### Task 2: Publishing & Deploying application
 
