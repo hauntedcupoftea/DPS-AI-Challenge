@@ -3,7 +3,7 @@
 This repository contains code for my work submitted as part of the selection process for the DPS 2025 March batch.
 All work is my own.
 
-## Task
+## The Problem
 
 The task at hand was to create a forecasting model with an API endpoint that operates on the following schema:
 Request:
@@ -82,17 +82,13 @@ Configuring a project with poetry makes it relatively simple to dockerize and de
 
     According to the challenge requirements.
 
-    ![Figure 6: Forecasting Endpoint Postman Test](/img/forecast.png)
+    ![Figure 7: Forecasting Endpoint Postman Test](/img/forecast.png)
 
 2. Model Performance (see response [here](https://dps-ai-challenge-ys81.onrender.com/model/performance))
     A simple get request that returns the statistics for the current model. This is made in case I ever add an MLOps pipeline to this project that watches the dataset and updates the model whenever the dataset is updated, but will return a static response for now.
 
-    ![Figure 7: Model Performance](/img/performance.png)
-
 3. Model Params (see response [here](https://dps-ai-challenge-ys81.onrender.com/model/hyper-params))
     Another static get request that returns the best params from the hyperparameter tuning. Also part of the MLOps pipeline, which returns a static response for now.
-
-    ![Figure 8: Model Hyperparameters](/img/hyper-params.png)
 
 ### Deployment
 
@@ -119,4 +115,6 @@ poetry run start
 
 ### Task 3: Submitting the Challenge
 
-.
+The final submission of the project as done at `Sat, 30 Nov 2024 10:38:10 GMT` and can be verified below.
+
+![Figure 8: Task 3 Submission](/img/task3.png)
