@@ -6,6 +6,8 @@ authors = ["hauntedcupoftea <andydchauhan@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 package-mode = false
+repository = "https://github.com/hauntedcupoftea/DPS-AI-Challenge"
+packages = [{ include = "app" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -20,6 +22,9 @@ seaborn = "^0.13.2"
 ipykernel = "^6.29.5"
 scikit-learn = "^1.5.2"
 pyqt6 = "^6.7.1"
+
+[tool.poetry.scripts]
+start = "app.main:start"
 
 [build-system]
 requires = ["poetry-core"]

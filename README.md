@@ -93,3 +93,7 @@ Configuring a project with poetry makes it relatively simple to dockerize and de
     Another static get request that returns the best params from the hyperparameter tuning. Also part of the MLOps pipeline, which returns a static response for now.
 
     ![Figure 8: Model Hyperparameters](/img/hyper-params.png)
+
+## Deployment
+
+The project can be self hosted should one wish, with a simple poetry command.

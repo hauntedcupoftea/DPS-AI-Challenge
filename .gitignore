@@ -1,6 +1,9 @@
 # Ignore all files inside the data/ folder
 data/*
 
+# Remove all cache
+*/__pycache__
+
 # Allow the data/ folder to remain in the repository
 !data/
 
